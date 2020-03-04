@@ -1,6 +1,6 @@
 import click.testing
 
-from hypermoden_python import console
+from hypermoden_python_lucasmbastos import console
 
 def test_main_succeeds():
 	runner = click.testing.CliRunner()
