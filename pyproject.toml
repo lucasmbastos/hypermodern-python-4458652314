@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "hypermodern-pythoni4458652314"
+name = "hypermodern-python-4458652314"
 version = "0.1.0"
 description = "The Hypermodern Python Project"
 license = "MIT"
-readme = "readme.md"
+readme = "README.md"
 homepage = "https://github.com/lucasmbastos/hypermodern-python-4458652314"
 repository = "https://github.com/lucasmbastos/hypermodern-python-4458652314"
 keywords = ["hypermodern"]
@@ -11,6 +11,7 @@ authors = ["Lucas de Miranda <lucasmbastos94@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+click = "^7.0"
 
 [tool.poetry.dev-dependencies]
 
