@@ -19,13 +19,10 @@ pytest = "^5.3.5"
 pylint = "^2.4.4"
 coverage = {extras = ["toml"], version = "^5.0.3"}
 pytest-cov = "^2.8.1"
+pytest-mock = "^2.0.0"
 
 [tool.poetry.scripts]
 hypermodern-python-lucasmbastos = "hypermodern_python_lucasmbastos.console:main"
-
-[build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
@@ -36,3 +33,7 @@ source = ["hypermodern_python_lucasmbastos"]
 
 [tool.coverage.report]
 show_missing = true
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
