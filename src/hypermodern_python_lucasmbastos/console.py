@@ -3,20 +3,17 @@ import textwrap
 import requests
 import click
 
-from . import __version__
+from . import __version__, wikipedia
 
 API_URL = "https://en.wikipedia.org/api/rest_v1/page/random/summary"
-
-
 
 
 @click.command()
 @click.version_option(version = __version__)
 def main():
     """The Hypermodern Python Project"""
-    with requests.get(API_URL) as response:
-        response.raise_for_status()
-        data = response.json()
+
+    data = wikipedia.random_page()
 
     title = data['title']
     extract = data['extract']
