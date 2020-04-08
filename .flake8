@@ -1,4 +1,10 @@
 [flake8]
-select = BLK,C,E,F,W
-ignore = E203, W503
+select = B, B9, BLK, C, E, F, I, S, W
+ignore = E203, E501, W503
 max-complexity = 10
+max-line-length = 80
+# Import Order
+application-import-names = hypermodern_python_lucasmbastos, tests
+import-order-style = google
+# Bugbear
+per-file-ignores = tests/*:S101
