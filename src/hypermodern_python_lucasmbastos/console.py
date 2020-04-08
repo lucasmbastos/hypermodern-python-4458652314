@@ -10,19 +10,19 @@ from . import __version__, wikipedia
 @click.option(
     "--language",
     "-l",
-    default='en',
+    default="en",
     help="Language edition of Wikipedia",
     metavar="LANG",
-    show_default=True
+    show_default=True,
 )
-@click.version_option(version = __version__)
+@click.version_option(version=__version__)
 def main(language):
     """The Hypermodern Python Project"""
 
     data = wikipedia.random_page(language=language)
 
-    title = data['title']
-    extract = data['extract']
+    title = data["title"]
+    extract = data["extract"]
 
     click.secho(title, fg="green")
     click.echo(textwrap.fill(extract))
