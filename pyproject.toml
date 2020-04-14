@@ -13,6 +13,8 @@ authors = ["Lucas de Miranda <lucasmbastos94@gmail.com>"]
 python = "^3.7"
 click = "^7.0"
 requests = "^2.23.0"
+desert = "^2020.1.6"
+marshmallow = "^3.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.3.5"
@@ -29,6 +31,7 @@ flake8-import-order = "^0.18.1"
 safety = "^1.8.7"
 mypy = "^0.770"
 pytype = {version = "^2020.4.1", python = "3.7"}
+typeguard = "^2.7.1"
 
 [tool.poetry.scripts]
 hypermodern-python-lucasmbastos = "hypermodern_python_lucasmbastos.console:main"
