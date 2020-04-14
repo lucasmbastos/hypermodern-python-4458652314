@@ -33,6 +33,8 @@ mypy = "^0.770"
 pytype = {version = "^2020.4.1", python = "3.7"}
 typeguard = "^2.7.1"
 flake8-annotations = "^2.1.0"
+flake8-docstrings = "^1.5.0"
+darglint = "^1.2.2"
 
 [tool.poetry.scripts]
 hypermodern-python-lucasmbastos = "hypermodern_python_lucasmbastos.console:main"
