@@ -126,6 +126,18 @@ version = "7.0"
 
 [[package]]
 category = "dev"
+description = "Hosted coverage reports for GitHub, Bitbucket and Gitlab"
+name = "codecov"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.0.22"
+
+[package.dependencies]
+coverage = "*"
+requests = ">=2.7.9"
+
+[[package]]
+category = "dev"
 description = "Cross-platform colored terminal text."
 marker = "sys_platform == \"win32\" or platform_system == \"Windows\""
 name = "colorama"
@@ -1088,7 +1100,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "a47e19e0f8b0ccbdce5d4a769c92e163c28f9b281c786f819418ec71d2cb78d2"
+content-hash = "05fdb78e7629f7b76babee91512be5b10fb954de847439ed82f40f024d1e375a"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1135,6 +1147,10 @@ chardet = [
 click = [
     {file = "Click-7.0-py2.py3-none-any.whl", hash = "sha256:2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13"},
     {file = "Click-7.0.tar.gz", hash = "sha256:5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"},
+]
+codecov = [
+    {file = "codecov-2.0.22-py2.py3-none-any.whl", hash = "sha256:09fb045eb044a619cd2b9dacd7789ae8e322cb7f18196378579fd8d883e6b665"},
+    {file = "codecov-2.0.22.tar.gz", hash = "sha256:aeeefa3a03cac8a78e4f988e935b51a4689bb1f17f20d4e827807ee11135f845"},
 ]
 colorama = [
     {file = "colorama-0.4.3-py2.py3-none-any.whl", hash = "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff"},
